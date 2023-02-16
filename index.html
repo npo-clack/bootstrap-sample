@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Home Page - portfolio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap icon用css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/animation.css">
+  </head>
+  <body class="bg-base-color">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a href="index.html" class="display-3 navbar-brand m-3 sub-color">My Home Page</a>
+      
+      <!-- dropdown -->
+      <div class="dropdown m-3 px-5">
+        <button class="btn dropdown-toggle sub-color" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu sub-color" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#works">Works</a></li>
+          <li><a class="dropdown-item" href="#about">About</a></li>
+          <li><a class="dropdown-item" href="#register">Register</a></li>
+          <li><a class="dropdown-item" href="#news">News</a></li>
+          <li><a class="dropdown-item" href="#access">Access</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="px-3">
+              <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook mx-1 sub-color"></i></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter mx-1 sub-color"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram mx-1 sub-color"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead fade">
+    <div class="container d-flex h-100 align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="text-center">
+          <h1 class="sub-color">Cover Image</h1>
+          <h2 class="text-secondary">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <section class="container-fluid py-5 text-center bg-main-color">
+      <!-- 基本のジャンボトロン https://bootstrap-guide.com/example -->
+      <!-- 使用技術: p-*, m-*, display-*, lead, rounded  -->
+      <div class="container bg-accent-color p-4 p-sm-5 my-4 rounded">
+        <h1 id="about" class="display-4 mb-4 base-color">About</h1>
+        <!-- .leadで目立たせる -->
+        <p class="lead">これは単純なヒーローユニット、注目のコンテンツや情報に特別な注意を喚起するためのシンプルなジャンボトロンスタイルのコンポーネントです。</p>
+        <hr class="my-4">
+        <p>より大きなコンテナの範囲内でコンテンツに空間をあけるため、文字の体裁と空白ユーティリティクラスを使用している。</p>
+      </div>
+    </section>
+    <!-- Card: https://getbootstrap.jp/docs/5.0/components/card/#grid-cards -->
+    <!-- 使用技術: container, row, row-cols-*, m-*, p-*, g-*, card-*, h-100, bi-*, small, text-* -->
+    <section class="container-fluid py-5 justify-content-center">
+      <h1 id="work" class="m-4 sub-color display-4">My works</h1>
+      <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 gy-4">
+          <div class="col">
+            <!-- .h-100で同じ高さにする -->
+            <div class="card h-100">
+              <img src="img/night_momiji_river.png" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">card-title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="text-end pb-1 text-secondary small"><i class="bi bi-calendar-event mx-1 accent-color"></i>2022/7/24</div>
+                <div class="text-end text-secondary small"><i class="bi bi-geo-alt-fill mx-1 accent-color"></i>Kyoto</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/kamo.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">card-title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="text-end pb-1 text-secondary small"><i class="bi bi-calendar-event mx-1 accent-color"></i>2022/7/24</div>
+                <div class="text-end text-secondary small"><i class="bi bi-geo-alt-fill mx-1 accent-color"></i>Kyoto</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/aquarium_night.png" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">card-title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="text-end pb-1 text-secondary small"><i class="bi bi-calendar-event mx-1 accent-color"></i>2022/7/24</div>
+                <div class="text-end text-secondary small"><i class="bi bi-geo-alt-fill mx-1 accent-color"></i>Kyoto</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/kenrokuen.png" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">card-title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="text-end pb-1 text-secondary small"><i class="bi bi-calendar-event mx-1 accent-color"></i>2022/7/24</div>
+                <div class="text-end text-secondary small"><i class="bi bi-geo-alt-fill mx-1 accent-color"></i>Kyoto</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/night_garden_momiji.png" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">card-title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="text-end pb-1 text-secondary small"><i class="bi bi-calendar-event mx-1 accent-color"></i>2022/7/24</div>
+                <div class="text-end text-secondary small"><i class="bi bi-geo-alt-fill mx-1 accent-color"></i>Kyoto</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/sun_set_arc.png" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">card-title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="text-end pb-1 text-secondary small"><i class="bi bi-calendar-event mx-1 accent-color"></i>2022/7/24</div>
+                <div class="text-end text-secondary small"><i class="bi bi-geo-alt-fill mx-1 accent-color"></i>Kyoto</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        
+      <section class="container-fluid my-3 py-5">
+        <div class="row">
+          <div class="col-5 m-3 p-3">
+            <h1 id="register" class="mb-4 sub-color display-4">Register</h1>
+            <form class="row g-3">
+              <div class="col-md-4">
+                <label for="inputEmail4" class="form-label">First</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Mark">
+              </div>
+              <div class="col-md-4">
+                <label for="inputEmail4" class="form-label" >Last</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Otto">
+              </div>
+              <div class="col-md-4">
+                <label for="inputEmail4" class="form-label">Handle</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="@mdo">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="gridCheck">
+                  <label for="gridCheck" class="form-check-label">
+                    保存する
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-6 m-3 p-3">
+            <h1 id="table" class="sub-color display-4">Table</h1>
+            <table class="table table-hover table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <section class="container-fluid py-5">
+      <div class="row">
+        <div class="col-6 px-5">
+          <h1 id="news" class="mb-4 sub-color display-4">News</h1>
+          <dl class="p-3 g-3 bg-sub-color rounded base-color">
+            <dt class="p-2 accent-color">2021/07/22</dt>
+            <dd class="px-2 accent-color">ホームページのデザインを新しくしました.</dd>
+            <dt class="p-2">2021/04/11</dt>
+            <dd class="px-2">新しい作品をアップしました．</dd>
+            <dt class="p-2">2020/11/20</dt>
+            <dd class="px-2">ホームページを更新しました．</dd>
+            <dt class="p-2">2020/06/01</dt>
+            <dd class="px-2">作品一覧（Works）を作成しました．</dd>
+            <dt class="p-2">2020/05/28</dt>
+            <dd class="px-2">ポートフォリオ用ホームページを作成しました！</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container-fluid bg-sub-color p-5">
+        <div class="col-6 base-color">
+          <h1 id="access" class="mb-4display-4">Access</h1>
+          <h4 class="m2-2">site author</h4>
+          <h4 class="mb-2">my.home.page@email.com</h4>
+          <div class="py-2">
+            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook mx-1 base-color h4"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter mx-1 base-color h4"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram mx-1 base-color h4"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/* base: #f5e8cf */
+/* sub: #957e80 */
+/* accent: #efc3bd */
+
+/* 基本の3色をベースに色を指定 */
+/* 基本の色を変えたくなったら置換をする． */
+
+.base-color {
+  color: #232946 !important;
+  color: #f5e8cf !important;
+}
+
+.bg-base-color {
+  background-color: #232946 !important;
+  background-color: #f5e8cf !important;
+}
+.sub-color {
+  color: #D5E0F1 !important;
+  color: #957e80 !important;
+}
+.bg-sub-color {
+  background-color: #D5E0F1 !important;
+  background-color: #957e80 !important;
+}
+
+.accent-color {
+  color: #E38692 !important;
+  color: #efc3bd !important;
+}
+.bg-accent-color {
+  background-color: #efc3bd !important;
+}
