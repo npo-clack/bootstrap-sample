@@ -111,6 +111,8 @@ https://bootstrap-guide.com/utilities/spacing
 ## 3. 例
 ### 3-1. ナビゲーションバー
 ### 3-2. ドロップダウンメニュー
+![dropdown](https://user-images.githubusercontent.com/48050669/221403430-be9fe4a4-b7cd-4286-8141-fc9083b9b5cb.gif)
+
 ナビゲーションバーと一緒に実装。
 必要なのは下の3つを適切に配置すること。
 1. ドロップダウン全体を表すdiv要素。 `class="dropdown"`が必須。
