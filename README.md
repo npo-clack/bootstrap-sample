@@ -3,6 +3,8 @@
 cssをできるだけ書かずに整ったデザインを実装する！
 HTMLにBootstrapで決められたclassをつけるだけでデザインが変わります。
 
+※ 凝ったデザインを作りたい場合は自分でcssをたくさん書く必要があります。
+
 ### 目次
 1.  Bootstrapの導入
 2. よく使うやつ
@@ -18,7 +20,6 @@ HTMLにBootstrapで決められたclassをつけるだけでデザインが変�
 	4. ジャンボトロン
 	5. カード
 	6. フォーム
-	7. News
 4. 配色のアレンジ
  
 ## 1. Bootstrapの導入
@@ -108,12 +109,75 @@ https://bootstrap-guide.com/utilities/spacing
 ※ うまく表示できない場合は1の読み込みでicon用のcssをちゃんと読み込んでいるか確認してみよう。
 
 ## 3. 例
-### ナビゲーションバー
-### ドロップダウンメニュー
-### sns icon
-### ジャンボトロン
-### カード
-### フォーム
+### 3-1. ナビゲーションバー
+### 3-2. ドロップダウンメニュー
+ナビゲーションバーと一緒に実装。
+必要なのは下の3つを適切に配置すること。
+1. ドロップダウン全体を表すdiv要素。 `class="dropdown"`が必須。
+2. ドロップダウンを開閉するボタン。 `class="dropdown-toggle"`と`data-bs-toggle="dropdown"`が必須。
+3. ドロップダウンの中身。`class="dropdown-menu"`と`class="dropdown-item"`。
+
+```html
+<nav class="navbar">
+
+	<div class="container-fluid">
+
+		<a href="index.html" class="display-3 navbar-brand m-3 sub-color">My Home Page</a>
+	
+		<!-- dropdown -->
+		<!-- !important 1. ドロップダウン全体を表すdiv要素 -->
+		<div class="dropdown m-3 px-5">
+			
+			<!-- !important 2. ドロップダウンを開閉するボタン -->
+			<button class="btn dropdown-toggle sub-color" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		
+			Menu
+		
+			</button>
+
+			<!-- !important 3. ドロップダウンの中身  -->
+			<ul class="dropdown-menu sub-color" aria-labelledby="navbarDropdown">
+		
+				<li><a class="dropdown-item" href="#works">Works</a></li>
+				
+				<li><a class="dropdown-item" href="#about">About</a></li>
+				
+				<li><a class="dropdown-item" href="#register">Register</a></li>
+				
+				<li><a class="dropdown-item" href="#news">News</a></li>
+				
+				<li><a class="dropdown-item" href="#access">Access</a></li>
+				
+				<li><hr class="dropdown-divider"></li>
+				
+				<li>あとでsns iconを実装</li>
+			
+			</ul>
+		
+		</div>
+		
+	</div>
+
+</nav>
+```
+### 3-3. sns icon
+### 3-4. ジャンボトロン
+
+```html
+    <section class="container-fluid py-5 text-center bg-main-color">
+      <!-- 基本のジャンボトロン https://bootstrap-guide.com/example -->
+      <!-- 使用クラス: p-*, m-*, display-*, lead, rounded  -->
+      <div class="container bg-accent-color p-4 p-sm-5 my-4 rounded">
+        <h1 id="about" class="display-4 mb-4 base-color">About</h1>
+        <!-- .leadで目立たせる -->
+        <p class="lead">これは単純なヒーローユニット、注目のコンテンツや情報に特別な注意を喚起するためのシンプルなジャンボトロンスタイルのコンポーネントです。</p>
+        <hr class="my-4">
+        <p>より大きなコンテナの範囲内でコンテンツに空間をあけるため、文字の体裁と空白ユーティリティクラスを使用している。</p>
+      </div>
+    </section>
+```
+### 3-5. カード
+### 3-6. フォーム
 
 ## 4. 配色のアレンジ
 
