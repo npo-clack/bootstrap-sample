@@ -111,8 +111,6 @@ https://bootstrap-guide.com/utilities/spacing
 ## 3. 例
 ### 3-1. ナビゲーションバー
 ### 3-2. ドロップダウンメニュー
-![dropdown](https://user-images.githubusercontent.com/48050669/221403430-be9fe4a4-b7cd-4286-8141-fc9083b9b5cb.gif)
-
 ナビゲーションバーと一緒に実装。
 必要なのは下の3つを適切に配置すること。
 1. ドロップダウン全体を表すdiv要素。 `class="dropdown"`が必須。
@@ -123,7 +121,6 @@ https://bootstrap-guide.com/utilities/spacing
 <nav class="navbar">
 
 	<div class="container-fluid">
-
 		<a href="index.html" class="display-3 navbar-brand m-3 sub-color">My Home Page</a>
 	
 		<!-- dropdown -->
@@ -132,46 +129,39 @@ https://bootstrap-guide.com/utilities/spacing
 			
 			<!-- !important 2. ドロップダウンを開閉するボタン -->
 			<button class="btn dropdown-toggle sub-color" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		
 			Menu
-		
 			</button>
 
 			<!-- !important 3. ドロップダウンの中身  -->
 			<ul class="dropdown-menu sub-color" aria-labelledby="navbarDropdown">
-		
 				<li><a class="dropdown-item" href="#works">Works</a></li>
-				
 				<li><a class="dropdown-item" href="#about">About</a></li>
-				
 				<li><a class="dropdown-item" href="#register">Register</a></li>
-				
 				<li><a class="dropdown-item" href="#news">News</a></li>
-				
 				<li><a class="dropdown-item" href="#access">Access</a></li>
-				
 				<li><hr class="dropdown-divider"></li>
-				
 				<li>あとでsns iconを実装</li>
-			
 			</ul>
-		
 		</div>
-		
 	</div>
-
 </nav>
 ```
 ### 3-3. sns icon
 ### 3-4. ジャンボトロン
+目立たせたいメッセージがある時に使えます。
+
+1. 背景を横幅全体に広げる。`class="container-fluid"`。
+2. ピンクの丸い角の枠を作る。`class="container rounded"`。
+3. スペースを調整。`class="p-4 my-4"`など。
 
 ```html
+		<!-- !important 1. 背景を横幅全体に広げる。 -->
     <section class="container-fluid py-5 text-center bg-main-color">
-      <!-- 基本のジャンボトロン https://bootstrap-guide.com/example -->
-      <!-- 使用クラス: p-*, m-*, display-*, lead, rounded  -->
-      <div class="container bg-accent-color p-4 p-sm-5 my-4 rounded">
+			<!-- !important 2. ピンクの丸い角の枠を作る。 -->
+			<!-- !important 3. スペースを調整。 -->
+      <div class="container bg-accent-color p-4 my-4 rounded">
         <h1 id="about" class="display-4 mb-4 base-color">About</h1>
-        <!-- .leadで目立たせる -->
+        <!-- class="lead"で目立たせる -->
         <p class="lead">これは単純なヒーローユニット、注目のコンテンツや情報に特別な注意を喚起するためのシンプルなジャンボトロンスタイルのコンポーネントです。</p>
         <hr class="my-4">
         <p>より大きなコンテナの範囲内でコンテンツに空間をあけるため、文字の体裁と空白ユーティリティクラスを使用している。</p>
