@@ -24,7 +24,7 @@ HTMLにBootstrapで決められたclassをつけるだけでデザインが変�
  
 ## 1. Bootstrapの導入
 ### 読み込み
-Bootstrapが作ったCSSやjavascriptを読み込むと，ルールに沿ってHTMLを書くだけで整ったデザインになります。
+Bootstrapが作ったCSSやjavascriptを読み込むと、ルールに沿ってHTMLを書くだけで整ったデザインになります。
 
 ```html
 <!DOCTYPE html>
@@ -62,6 +62,8 @@ icon: https://icons.getbootstrap.jp/#使い方
 (1) 作りたいパーツを見つける。(ドロップダウンメニュー、ツールチップなど。パーツの名前が難しいので「コンポーネント」などを一通り見てみて)
 (2) **HTMLの書き方**と**classの付け方**を確認する。
 (3) 自分のコードに必要なHTMLとCSSを書き込む（もしくはコピペ）。
+
+もしくは、下の例からコピペして不要な箇所を削除。
 
 ### 参考サイト
 [日本語ガイド](https://bootstrap-guide.com/)
@@ -169,6 +171,43 @@ https://bootstrap-guide.com/utilities/spacing
     </section>
 ```
 ### 3-5. カード
+
+1. カードの配置を設定する。`class=row row-cols-1 row-cols-md-3`。
+2. 各カードの幅を設定する。`class=col`。
+
+```html
+<div class="container py-5">
+	<div class="row row-cols-1 row-cols-md-3 gy-4">
+		<!-- 個別のカードのHTML -->
+		<div class="col">
+			<div class="card h-100">
+				<!-- 中身を書く -->
+			</div>
+		</div>
+
+		<!-- 個別のカードのHTMLを5個続ける -->
+	</div>
+</div>
+```
+
+個別のカードのHTML
+
+1. カードの全体を表すdiv要素。
+2. カード内の要素のデザイン。`card-img-top`、`card-body`、`card-title`、`card-text`。
+
+```html
+<div class="col">
+	<div class="card h-100">
+		<img src="img/night_momiji_river.png" class="card-img-top h-100" alt="...">
+		<div class="card-body">
+			<h5 class="card-title">card-title</h5>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<div class="text-end pb-1 text-secondary small"><i class="bi bi-calendar-event mx-1 accent-color"></i>2022/7/24</div>
+			<div class="text-end text-secondary small"><i class="bi bi-geo-alt-fill mx-1 accent-color"></i>Kyoto</div>
+		</div>
+	</div>
+</div>
+```
 ### 3-6. フォーム
 
 ## 4. 配色のアレンジ
