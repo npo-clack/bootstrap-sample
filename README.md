@@ -8,11 +8,10 @@ HTMLにBootstrapで決められたclassをつけるだけでデザインが変�
 ### 目次
 1.  Bootstrapの導入
 2. よく使うやつ
-	- container
-	- row, column
-	- サイズ調整
-	- round
-	- icon
+ 	1. レイアウト
+	2. サイズ調整
+	3. round
+	4. icon
 3. 例
 	1. ナビゲーションバー
 	2. ドロップダウンメニュー
@@ -69,8 +68,8 @@ icon: https://icons.getbootstrap.jp/#使い方
 [実例]( https://bootstrap-guide.com/example)
 https://qiita.com/michimichix521/items/3d7193e6002ed2b0e676
 
-## よく使うやつ
-### レイアウト
+## 2. よく使うやつ
+### 2-1. レイアウト
 countainer: いい感じの幅の要素を作ってくれます。
 ```html
 <div class="container">
@@ -88,17 +87,17 @@ row, col: 下のようにすると `<div class="col">写真とか</div>` を同�
 </div>
 ```
 
-### サイズ調整
+### 2-2. サイズ調整
 HTML要素に`mb-3`や`px-2`といったclassをつけることでmargin(要素の外側のスペース)やpadding(要素の内側のスペース)を調整できます。
 https://bootstrap-guide.com/utilities/spacing
 
-### round
+### 2-3. round
 要素の角が丸くなります。
 ```html
 <div class="round"></div>
 ```
 
-### icon
+### 2-4. icon
 アイコンフォントを使います。
 [Bootstrap icon](https://icons.getbootstrap.jp) から好きなiconを見つけて名前を確認して`<i>` タグのclassにつける、もしくはコードをコピペ。
 
@@ -111,8 +110,13 @@ https://bootstrap-guide.com/utilities/spacing
 
 ## 3. 例
 ### 3-1. ナビゲーションバー
+次のところに書いてあります。
+
 ### 3-2. ドロップダウンメニュー
 ナビゲーションバーと一緒に実装。
+
+![dropdown](https://user-images.githubusercontent.com/48050669/222440920-cf58e3da-0a69-47ef-bfa9-a78db4cc46ea.gif)
+
 必要なのは下の3つを適切に配置すること。
 1. ドロップダウン全体を表すdiv要素。 `class="dropdown"`が必須。
 2. ドロップダウンを開閉するボタン。 `class="dropdown-toggle"`と`data-bs-toggle="dropdown"`が必須。
@@ -148,6 +152,19 @@ https://bootstrap-guide.com/utilities/spacing
 </nav>
 ```
 ### 3-3. sns icon
+基本的には2-4のiconと同じです。snsのiconを探してきて並べます。
+
+<img width="147" alt="icons" src="https://user-images.githubusercontent.com/48050669/222438981-149ed975-e1b2-4572-acba-37500a854938.png">
+
+```html
+<div class="py-2">
+    <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook mx-1 base-color h4"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter mx-1 base-color h4"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram mx-1 base-color h4"></i></a>
+</div>
+```
+
+
 ### 3-4. ジャンボトロン
 目立たせたいメッセージがある時に使えます。
 
@@ -228,16 +245,25 @@ Webサイトを綺麗に見せる配色のコツは見やすい色の組み合�
 
 ※ 割合はあくまで目安なので、数字にこだわらずだいたいでオッケーです。
 
+<img width="1504" alt="colors" src="https://user-images.githubusercontent.com/48050669/222434646-b3b17265-d451-4edd-bb3d-30ae20f312e7.png">
+
+
 ### 4-2. 配色選び
 見やすい3色を選んで見ましょう。見やすい組み合わせの3色を選ぶのを助けてくれるサイト
 [random-material-palette](https://www.threebu.it/random-material-palette/)を使ってみます。
 
 やることは
-1. リンク先で色の組み合わせを決める。
+1. [random-material-palette](https://www.threebu.it/random-material-palette/)で色の組み合わせを決める。
 2. カラーコード(`#F0F4C3`みたいなやつ)を3色分コピーして使う。
 
+![random-palette-comment](https://user-images.githubusercontent.com/48050669/222438120-b32b363e-82de-42e8-a293-a68e4a38c209.jpg)
 
 
+使ってみるとこんな感じ。
+
+![random-palette2](https://user-images.githubusercontent.com/48050669/222435507-a7dd3724-0ae1-471f-8d3b-b2d7e1929d01.gif)
+
+他にもいろいろあるので興味があったらサイトに行ってみてください。
 
 参考リンク
 - 配色について
