@@ -151,6 +151,8 @@ https://bootstrap-guide.com/utilities/spacing
 ### 3-4. ジャンボトロン
 目立たせたいメッセージがある時に使えます。
 
+<img width="1504" alt="Jumbotron" src="https://user-images.githubusercontent.com/48050669/221405550-80916e16-ce43-40f1-b95f-62ba82863f08.png">
+
 1. 背景を横幅全体に広げる。`class="container-fluid"`。
 2. ピンクの丸い角の枠を作る。`class="container rounded"`。
 3. スペースを調整。`class="p-4 my-4"`など。
@@ -170,6 +172,7 @@ https://bootstrap-guide.com/utilities/spacing
     </section>
 ```
 ### 3-5. カード
+<img width="1504" alt="cards" src="https://user-images.githubusercontent.com/48050669/221405513-0c17f1ab-70cc-4b34-a423-5606aa758b40.png">
 
 1. カードの配置を設定する。`class=row row-cols-1 row-cols-md-3`。
 2. 各カードの幅を設定する。`class=col`。
