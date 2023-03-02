@@ -19,7 +19,6 @@ HTMLにBootstrapで決められたclassをつけるだけでデザインが変�
 	3. sns icon
 	4. ジャンボトロン
 	5. カード
-	6. フォーム
 4. 配色のアレンジ
  
 ## 1. Bootstrapの導入
@@ -123,19 +122,19 @@ https://bootstrap-guide.com/utilities/spacing
 <nav class="navbar">
 
 	<div class="container-fluid">
-		<a href="index.html" class="display-3 navbar-brand m-3 sub-color">My Home Page</a>
+		<a href="index.html" class="display-3 navbar-brand m-3 main-color">My Home Page</a>
 	
 		<!-- dropdown -->
 		<!-- !important 1. ドロップダウン全体を表すdiv要素 -->
 		<div class="dropdown m-3 px-5">
 			
 			<!-- !important 2. ドロップダウンを開閉するボタン -->
-			<button class="btn dropdown-toggle sub-color" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			<button class="btn dropdown-toggle main-color" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 			Menu
 			</button>
 
 			<!-- !important 3. ドロップダウンの中身  -->
-			<ul class="dropdown-menu sub-color" aria-labelledby="navbarDropdown">
+			<ul class="dropdown-menu main-color" aria-labelledby="navbarDropdown">
 				<li><a class="dropdown-item" href="#works">Works</a></li>
 				<li><a class="dropdown-item" href="#about">About</a></li>
 				<li><a class="dropdown-item" href="#register">Register</a></li>
@@ -208,23 +207,43 @@ https://bootstrap-guide.com/utilities/spacing
 	</div>
 </div>
 ```
-### 3-6. フォーム
 
 ## 4. 配色のアレンジ
 配色で印象が大きく変わるのでうまく色を組み合わせを選んでみましょう。
-### Point
+### 4-1. 配色のコツ
+Webサイトを綺麗に見せる配色のコツは見やすい色の組み合わせにして、色を使いすぎないことです。
+また、選んだ色に背景用や強調用といった役割を決めてそのルール通りに使うことで整った印象を与えてくれます。
+
+例えば、好きな3色を選んで、下のような割合で使うといい感じです。
+1. ベースカラー：主に背景用。70%くらい。
+2. メインカラー：主役の色。ロゴや見出しに使う。25%くらい。
+3. アクセントカラー：差し色。強調したいときにワンポイント入れる。5%くらい。
+
 ```
-見やすい色の組み合わせにする
-色は使いすぎない
+ベースカラー：メインカラー：アクセントカラー = 70 : 25 : 5
 ```
-### やり方
-1. 以下のリンク先で色の組み合わせを決める。
-2. カラーコード(`#F0F4C3`みたいなやつ)をコピーして使う。
+
+※ 割合はあくまで目安なので、数字にこだわらずだいたいでオッケーです。
+
+### 4-2. 配色選び
+見やすい3色を選んで見ましょう。見やすい組み合わせの3色を選ぶのを助けてくれるサイト
+[random-material-palette](https://www.threebu.it/random-material-palette/)を使ってみます。
+
+やることは
+1. リンク先で色の組み合わせを決める。
+2. カラーコード(`#F0F4C3`みたいなやつ)を3色分コピーして使う。
+
+
+
 
 参考リンク
-- [クリックするだけで3色の組み合わせをランダムに提案。](https://www.threebu.it/random-material-palette/)
-- [より細かい色の組み合わせを提案してくれる。](https://www.happyhues.co/)
-- [画像から4色の組み合わせを提案。](https://imagehues.com/)
+- 配色について
+	- [WEBデザインの配色のコツとおすすめサービスご紹介
+](https://qiita.com/aucfan_hasebe/items/dd413c0cda776f84c6e4)
+- 色選び
+	- [random-material-palette: クリックするだけで3色の組み合わせをランダムに提案。](https://www.threebu.it/random-material-palette/)
+	- [より細かい色の組み合わせを提案してくれる。](https://www.happyhues.co/)
+	- [画像から4色の組み合わせを提案。](https://imagehues.com/)
 
 
 
