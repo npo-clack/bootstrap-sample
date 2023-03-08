@@ -276,5 +276,7 @@ Webサイトを綺麗に見せる配色のコツは見やすい色の組み合�
 	- [より細かい色の組み合わせを提案してくれる。](https://www.happyhues.co/)
 	- [画像から4色の組み合わせを提案。](https://imagehues.com/)
 
-
+その他CSS・デザイン参考
+	- [動くweb デザイン帳 https://coco-factory.jp/ugokuweb/]
+	- [サンプルサイト集 https://photoshopvip.net/133747#tip1]
 
